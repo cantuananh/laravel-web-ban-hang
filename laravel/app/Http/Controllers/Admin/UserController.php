@@ -102,14 +102,12 @@ class UserController extends Controller
         if ($request->password) {
             $dataUpdate['password'] = Hash::make($request->password);
         }
-
         $dataUpdate['password'] = Hash::make($request->password);
         $currentImage = $user->images ? $user->images->first()->url : '';
         $dataUpdate['image'] = $this->user->updateImage($request, $currentImage);
         $user->update($dataUpdate);
         $user->images()->updateOrCreate(['url' => $dataUpdate['image']]);
         $user->roles()->sync($dataUpdate['role_ids'] ?? []);
-
         return to_route('users.index')->with(['message' => 'Update success']);
     }
 
@@ -126,8 +124,6 @@ class UserController extends Controller
         $imageName = $user->images->count() > 0 ? $user->images->first()->url : '';
         $this->user->deleteImage($imageName);
         $user->delete();
-
         return to_route('users.index')->with(['message' => 'Delete success']);
-
     }
 }

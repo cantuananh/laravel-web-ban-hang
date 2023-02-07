@@ -12,6 +12,11 @@
       <excludeFolder url="file://$MODULE_DIR$/laravel/vendor/spatie/laravel-permission" />
       <excludeFolder url="file://$MODULE_DIR$/laravel/vendor/squizlabs/php_codesniffer" />
       <excludeFolder url="file://$MODULE_DIR$/laravel/vendor/intervention/image" />
+      <excludeFolder url="file://$MODULE_DIR$/laravel/vendor/doctrine/deprecations" />
+      <excludeFolder url="file://$MODULE_DIR$/laravel/vendor/doctrine/event-manager" />
+      <excludeFolder url="file://$MODULE_DIR$/laravel/vendor/doctrine/dbal" />
+      <excludeFolder url="file://$MODULE_DIR$/laravel/vendor/doctrine/cache" />
+      <excludeFolder url="file://$MODULE_DIR$/laravel/vendor/psr/cache" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
